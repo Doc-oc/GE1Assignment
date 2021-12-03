@@ -12,7 +12,7 @@ void Update()
     if(going_right) 
     {
         transform.Translate(Vector3.forward * Time.deltaTime * speed); // Move right
-        if(transform.position.y > 7) // Too far right
+        if(transform.position.x > 7) // Too far right
         { 
             going_right = false; // Switch direction
         }
@@ -20,7 +20,7 @@ void Update()
     else 
     {
         transform.Translate(-Vector3.forward * Time.deltaTime * speed); // Move left
-        if(transform.position.y < -5) // Too far left
+        if(transform.position.x < -5) // Too far left
         { 
             going_right = true; // Switch direction
         }
