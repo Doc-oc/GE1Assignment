@@ -10,6 +10,8 @@ public class CarController : MonoBehaviour
     public bool isGrounded;
     Rigidbody rb;
 
+    public SpawnManager spawnManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +35,9 @@ public class CarController : MonoBehaviour
         float verMovement = Input.GetAxis("Vertical") * speed;
 
         transform.Translate(new Vector3(horMovement, 0, verMovement) * Time.deltaTime);
+    }
+
+    private void onTriggerEnter(Collider other){
+        spawnManager.SpawnTriggerEntered();
     }
 }
