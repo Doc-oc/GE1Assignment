@@ -1,3 +1,8 @@
 # GE1Assignment
 
-I want to create a visual representation of a lofi hip-hop mix that I listen to when I do any type of study or work. The lofi mix is normally a youtube 24/7 live stream that is on repeat, so I would like to create a visual representation that could match the beat of the mix.
+I am creating a endless runner game similar to subway surfers or Temple run , where there will be a world and obstacles and barriers will present themselves to 
+the user as they play. The game will get progessivily harder as the player progresses.
+
+
+
+
