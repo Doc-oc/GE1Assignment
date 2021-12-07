@@ -8,6 +8,7 @@ public class GunController : MonoBehaviour
     public float range = 100f;
 
     public CarController fpsGun;
+    
 
     // Start is called before the first frame update
     void Start()
