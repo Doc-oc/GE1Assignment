@@ -7,13 +7,13 @@ public class CameraController : MonoBehaviour
 
     private Transform car;
 
-    private float zOffset = -4f;
-    private float yOffset = 1f;
+    private float zOffset = -9f;
+    private float yOffset = 2f;
     
     // Start is called before the first frame update
     void Start()
     { 
-        car = GameObject.Find("Car").transform;
+        car = GameObject.Find("Spaceship").transform;
         
     }
 
