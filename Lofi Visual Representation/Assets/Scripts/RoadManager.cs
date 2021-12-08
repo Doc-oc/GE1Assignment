@@ -10,6 +10,9 @@ public class RoadManager : MonoBehaviour
     public int numOfRoads = 3;
     // Start is called before the first frame update
     public Transform playerTransform;
+
+    private List<GameObject> activeRoad = new List<GameObject>();
+
     void Start()
     {
         for(int i=0; i<numOfRoads; i++){
@@ -25,13 +28,20 @@ public class RoadManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerTransform.position.z>zSpawn-(numOfRoads*roadLength)){
+        if(playerTransform.position.z -35>zSpawn-(numOfRoads*roadLength)){
             SpawnRoad(Random.Range(0, roadPrefabs.Length));
+            DeleteRoad();
         }
     }
 
     public void SpawnRoad(int roadIndex){
-        Instantiate(roadPrefabs[roadIndex], transform.forward * zSpawn, transform.rotation);
+        GameObject gObj = Instantiate(roadPrefabs[roadIndex], transform.forward * zSpawn, transform.rotation);
+        activeRoad.Add(gObj);
         zSpawn += roadLength;
+    }
+
+    private void DeleteRoad(){
+        Destroy(activeRoad[0]);
+        activeRoad.RemoveAt(0);
     }
 }
