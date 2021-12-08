@@ -7,7 +7,7 @@ public class GunController : MonoBehaviour
     public float damage = 10f;
     public float range = 100f;
 
-    public CarController fpsGun;
+    public PlayerController fpsGun;
     
 
     // Start is called before the first frame update
