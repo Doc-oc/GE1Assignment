@@ -1070,7 +1070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  range: 500
+  range: 100
   fpsGun: {fileID: 2134103837}
   bulletTrail: {fileID: -2875457432937281820, guid: f866700c8b7644ad4be13b71f871b714,
     type: 3}
