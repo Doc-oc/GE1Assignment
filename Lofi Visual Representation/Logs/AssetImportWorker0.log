@@ -1027,3 +1027,221 @@ Received Import Request.
 Start importing Assets/New Material 1.mat using Guid(23543bc62b07e48d2a3a0e5e981b8cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe5a3c294958b48205d5e14b88372bab') in 0.078892 seconds 
   Import took 0.083465 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006363 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2021-12-09 14:54:53.436 Unity[52887:2121825] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000030a7db0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.245 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1245ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (1045ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (357ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (360ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 291.8 MB.
+System memory in use after: 291.9 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2352.
+Total: 3.236005 ms (FindLiveObjects: 0.199859 ms CreateObjectMapping: 0.052039 ms MarkObjects: 2.956934 ms  DeleteObjects: 0.026249 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 399.060252 seconds.
+  path: Assets/New Material 1.mat
+  artifactKey: Guid(23543bc62b07e48d2a3a0e5e981b8cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material 1.mat using Guid(23543bc62b07e48d2a3a0e5e981b8cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82cf423411fcc364d7a27fa71d2f7162') in 0.382893 seconds 
+  Import took 0.413190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.133336 seconds.
+  path: Assets/Stylized Lava PBR Texture/Material/Lava.mat
+  artifactKey: Guid(81368c2a9de920a49a4b8eb69c1f0590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Lava PBR Texture/Material/Lava.mat using Guid(81368c2a9de920a49a4b8eb69c1f0590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68bec1a7dbd5a79e3b8abe7e21f2cedc') in 0.938591 seconds 
+  Import took 0.948313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.064453 seconds.
+  path: Assets/Stylized Lava PBR Texture/Material
+  artifactKey: Guid(91468d05143bebb41a20bb873cacf19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Lava PBR Texture/Material using Guid(91468d05143bebb41a20bb873cacf19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '906c7a9ce5f1333c29f92000af89aa21') in 0.001160 seconds 
+  Import took 0.005784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.931580 seconds.
+  path: Assets/Stylized Lava PBR Texture/Textures
+  artifactKey: Guid(395cb9e0ad47f194c8821f0253e7e83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Lava PBR Texture/Textures using Guid(395cb9e0ad47f194c8821f0253e7e83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f41294cabb0a98999a6e7a7967e574d') in 0.003466 seconds 
+  Import took 0.028434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018908 seconds.
+  path: Assets/Stylized Lava PBR Texture/Textures/Lava_ambientocclusion.png
+  artifactKey: Guid(802ff8393714fb142acc1616721b4b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Lava PBR Texture/Textures/Lava_ambientocclusion.png using Guid(802ff8393714fb142acc1616721b4b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b44174ac413772d758b665776e9f9ca') in 1.135994 seconds 
+  Import took 1.141270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004726 seconds.
+  path: Assets/Stylized Lava PBR Texture/Textures/Lava_Emissive.png
+  artifactKey: Guid(5e835ee224164df418346548be68d294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Lava PBR Texture/Textures/Lava_Emissive.png using Guid(5e835ee224164df418346548be68d294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f2cb946444b47865944f3b2cdc01eb') in 0.026088 seconds 
+  Import took 0.030159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Stylized Lava PBR Texture/Textures/Lava_height.png
+  artifactKey: Guid(c7f4bbf3f857f09449848e3449722f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Lava PBR Texture/Textures/Lava_height.png using Guid(c7f4bbf3f857f09449848e3449722f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e0baa214f9b1656b5fe3096f76f0fd') in 0.019174 seconds 
+  Import took 0.022520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Stylized Lava PBR Texture/Textures/Lava_normal.png
+  artifactKey: Guid(e0144d5089507fd4797d4e410603e721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Lava PBR Texture/Textures/Lava_normal.png using Guid(e0144d5089507fd4797d4e410603e721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac662fa8b8d1e0122baab203b0ff19d3') in 0.112073 seconds 
+  Import took 0.115718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/Stylized Lava PBR Texture/Textures/Lava_basecolor.png
+  artifactKey: Guid(a4b7501a6b8e7724d80c7b2b81553271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Lava PBR Texture/Textures/Lava_basecolor.png using Guid(a4b7501a6b8e7724d80c7b2b81553271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '839df22b7d15a9d0b23fdd9cab741852') in 0.032622 seconds 
+  Import took 0.036065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/Stylized Lava PBR Texture/Textures/Lava_roughness.png
+  artifactKey: Guid(7ecb64f57a00cb24194542cc232f19d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Lava PBR Texture/Textures/Lava_roughness.png using Guid(7ecb64f57a00cb24194542cc232f19d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47d00fa3fc09131d53217cee4f9d5032') in 0.015826 seconds 
+  Import took 0.019319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.729831 seconds.
+  path: Assets/Stylized Lava PBR Texture/Materials
+  artifactKey: Guid(40a3033f2923b4c9da0cf00675c974f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Lava PBR Texture/Materials using Guid(40a3033f2923b4c9da0cf00675c974f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21d2a02d39a883b483687b76f84b031f') in 0.002219 seconds 
+  Import took 0.006777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044001 seconds.
+  path: Assets/Stylized Lava PBR Texture/Materials/Lava_roughness.mat
+  artifactKey: Guid(98c9f16dd9f114b0da67cec7c9bdecf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized Lava PBR Texture/Materials/Lava_roughness.mat using Guid(98c9f16dd9f114b0da67cec7c9bdecf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20890e803a389aabf4c2e34b62960927') in 0.070034 seconds 
+  Import took 0.077026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 85.857058 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(8f761cc0c4447406287f34073f0da9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(8f761cc0c4447406287f34073f0da9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '792661acf174ab03c5abca2cadbf64d2') in 0.032208 seconds 
+  Import took 0.036503 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004577 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2021-12-09 15:12:08.961 Unity[52887:2121825] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000301c460 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.490 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1493ms)
+		BeginReloadAssembly (265ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (147ms)
+		EndReloadAssembly (1142ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (396ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (387ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (241ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 297.3 MB.
+System memory in use after: 296.9 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2371.
+Total: 4.497850 ms (FindLiveObjects: 0.443057 ms CreateObjectMapping: 0.135850 ms MarkObjects: 3.339059 ms  DeleteObjects: 0.577487 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
