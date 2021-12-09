@@ -882,7 +882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -2.3}
+  m_AnchoredPosition: {x: 0, y: -4.4}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1691220799
@@ -1070,7 +1070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  range: 100
-  BulletSpawnPoint: {fileID: 2134103832}
-  BulletTrail: {fileID: -7798594658355738311, guid: 44acea5bf9deb4162a940babaac62219,
+  range: 500
+  fpsGun: {fileID: 2134103837}
+  bulletTrail: {fileID: -2875457432937281820, guid: f866700c8b7644ad4be13b71f871b714,
     type: 3}
