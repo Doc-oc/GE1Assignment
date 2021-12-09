@@ -669,3 +669,188 @@ Received Import Request.
 Start importing Assets/Free Skyboxes - Space/SBS Space 1/Large/Skybox_Space 1 Large.mat using Guid(0a98eaa61401f3c49a068e4fbd6c2e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9319db0c81bb214cb731b6ce475ff621') in 1.071515 seconds 
   Import took 1.132094 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 2.165661 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Front_Space 1 Large.png
+  artifactKey: Guid(ebb9078962d6e984a8e314966ba47605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Front_Space 1 Large.png using Guid(ebb9078962d6e984a8e314966ba47605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6f3a1a7aff99f58a58148423d9d0d98') in 0.471892 seconds 
+  Import took 0.493469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Left_Space 1 Large.png
+  artifactKey: Guid(e5bfc1abc53e0f24bbcfe5f5b5de835e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Left_Space 1 Large.png using Guid(e5bfc1abc53e0f24bbcfe5f5b5de835e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34b188907154284189ac7858e45f7d64') in 0.113435 seconds 
+  Import took 0.129353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Right_Space 1 Large.png
+  artifactKey: Guid(dad70adf15a0a5e4d859dad154f91d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Right_Space 1 Large.png using Guid(dad70adf15a0a5e4d859dad154f91d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfbefa9e9ba6fa1e9613eb19dec4d27a') in 0.116120 seconds 
+  Import took 0.131462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Back_Space 1 Large.png
+  artifactKey: Guid(0b268821f988b7549b282e6fdd1a4725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Back_Space 1 Large.png using Guid(0b268821f988b7549b282e6fdd1a4725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29a0e1e1e6d82e8d2b73ec22963ad272') in 0.120681 seconds 
+  Import took 0.139047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Up_Space 1 Large.png
+  artifactKey: Guid(1bca99ffbc01a19419b7c072c1c59182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Up_Space 1 Large.png using Guid(1bca99ffbc01a19419b7c072c1c59182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9db69d618457bb167cef68538862d3d7') in 0.115873 seconds 
+  Import took 0.134116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Down_Space 1 Large.png
+  artifactKey: Guid(e6b4351057222e8438c988b8ce155b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Down_Space 1 Large.png using Guid(e6b4351057222e8438c988b8ce155b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b78110099a757af168681be8f2f91c2') in 0.134122 seconds 
+  Import took 0.158403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 167.389193 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Medium/Skybox_Space 1 Medium.mat
+  artifactKey: Guid(cb4b6d1bf9c978042b7931378995b776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Medium/Skybox_Space 1 Medium.mat using Guid(cb4b6d1bf9c978042b7931378995b776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3292649367b38c5917993d80a73a88ce') in 0.253807 seconds 
+  Import took 0.270614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004725 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Small/Skybox_Space 1 Small.mat
+  artifactKey: Guid(a4ed21be487740a418a654407aaaf103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Small/Skybox_Space 1 Small.mat using Guid(a4ed21be487740a418a654407aaaf103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9994dee6e756b65ef37d8e390e815df0') in 0.086332 seconds 
+  Import took 0.092140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 3/Medium/Skybox_Space 3 Medium.mat
+  artifactKey: Guid(412f5114ffdfb224090e321b3492cdd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 3/Medium/Skybox_Space 3 Medium.mat using Guid(412f5114ffdfb224090e321b3492cdd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48107ae02b1c9c5d728208b397b04eeb') in 0.139328 seconds 
+  Import took 0.155620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 3/Small/Skybox_Space 3 Small.mat
+  artifactKey: Guid(f7f800d56bc6c824a9bc54e982d4ed0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 3/Small/Skybox_Space 3 Small.mat using Guid(f7f800d56bc6c824a9bc54e982d4ed0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c9bae23a7ae7eeedf1f7fdf55efd86e') in 0.064291 seconds 
+  Import took 0.070324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 4/Large/Skybox_Space 4 Large.mat
+  artifactKey: Guid(bcd3417f7c4e30d40bdf0dc5002ae1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 4/Large/Skybox_Space 4 Large.mat using Guid(bcd3417f7c4e30d40bdf0dc5002ae1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39a5058d7fab812f3ce2553dada46caf') in 0.151900 seconds 
+  Import took 0.163083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 4/Medium/Skybox_Space 4 Medium.mat
+  artifactKey: Guid(ab815e1cd29c5f244bcdd121845400ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 4/Medium/Skybox_Space 4 Medium.mat using Guid(ab815e1cd29c5f244bcdd121845400ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f15a62b471771b0f785e9ed178ae8bbd') in 0.175247 seconds 
+  Import took 0.205172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 2/Small/Skybox_Space 2 Small.mat
+  artifactKey: Guid(98740415e46103c4da3ab7bb864ab17d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 2/Small/Skybox_Space 2 Small.mat using Guid(98740415e46103c4da3ab7bb864ab17d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc7f7582f89972b068e76653239762c') in 0.062503 seconds 
+  Import took 0.068442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 3/Large/Skybox_Space 3 Large.mat
+  artifactKey: Guid(9e07b5f1ebeb2764ea80a163086f4ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 3/Large/Skybox_Space 3 Large.mat using Guid(9e07b5f1ebeb2764ea80a163086f4ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cebe8fd059235a04a5378e71913ec3a1') in 1.828221 seconds 
+  Import took 1.914556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.726326 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 4/Small/Skybox_Space 4 Small.mat
+  artifactKey: Guid(1a995ed9c8693fd459f57a369da1b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 4/Small/Skybox_Space 4 Small.mat using Guid(1a995ed9c8693fd459f57a369da1b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '135d228bc1e38c7b95a7418c5c0cf2c8') in 0.078919 seconds 
+  Import took 0.087315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 5/Medium/Skybox_Space 5 Medium.mat
+  artifactKey: Guid(57a03e42a58e1e242b3b60b258a9229b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Skyboxes - Space/SBS Space 5/Medium/Skybox_Space 5 Medium.mat using Guid(57a03e42a58e1e242b3b60b258a9229b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1520988644fb5d11a2ba6f5c7cc6985') in 0.170348 seconds 
+  Import took 0.188645 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005250 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2021-12-09 17:17:17.367 Unity[1241:15136] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600003f25180 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.292 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1295ms)
+		BeginReloadAssembly (204ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (122ms)
+		EndReloadAssembly (1015ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (348ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (354ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (223ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 314.9 MB.
+System memory in use after: 315.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2195.
+Total: 3.851170 ms (FindLiveObjects: 0.353405 ms CreateObjectMapping: 0.087877 ms MarkObjects: 3.380236 ms  DeleteObjects: 0.028181 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
