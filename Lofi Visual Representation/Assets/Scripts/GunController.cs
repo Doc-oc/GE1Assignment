@@ -7,8 +7,8 @@ public class GunController : MonoBehaviour
     public float damage = 10f;
     public float range = 100f;
 
-    public Transform BulletSpawnPoint;
-    private TrailRenderer BulletTrail;
+    public PlayerController fpsGun;
+    public LineRenderer bulletTrail;
     
 
     // Start is called before the first frame update
@@ -26,42 +26,26 @@ public class GunController : MonoBehaviour
     }
 
     void Shoot(){
-        Debug.Log("shoot entered");
-
-        Vector3 direction = GetDirection();
-
-        if(Physics.Raycast(BulletSpawnPoint.position, direction, out RaycastHit hit, range)){
-            Debug.Log("if entered");
+        RaycastHit hit;
+        if(Physics.Raycast(fpsGun.transform.position, fpsGun.transform.forward, out hit, range)){
             Debug.Log(hit.transform.name);
 
             Target target = hit.transform.GetComponent<Target>();
-            TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
-            StartCoroutine(SpawnTrailer(trail, hit));
             if(target != null){
                 target.TakeDamage(damage);
             }
-        }else {
-            Debug.Log("else");
+
+            SpawnVoidTrail(hit.point);
         }
     }
 
-    private Vector3 GetDirection(){
-        Vector3 direction = transform.forward;
+    private void SpawnVoidTrail(Vector3 hitpoint){
+        GameObject bulletTraillEffect = Instantiate(bulletTrail.gameObject, fpsGun.transform.position, Quaternion.identity);
+        LineRenderer lineR = bulletTraillEffect.GetComponent<LineRenderer>();
 
-        return direction;
-    }
+        lineR.SetPosition(0, fpsGun.transform.position);
+        lineR.SetPosition(1, hitpoint);
 
-    private IEnumerator SpawnTrailer(TrailRenderer trail, RaycastHit hit){
-        float time = 0;
-        Vector3 startPosition = trail.transform.position;
-
-        while(time > 1){
-            trail.transform.position = Vector3.Lerp(startPosition, hit.point, time);
-            time += Time.deltaTime / trail.time;
-            yield return null;
-        }
-        trail.transform.position = hit.point;
-
-        Destroy(trail.gameObject, trail.time);
+        Destroy(bulletTraillEffect, 0.3f);
     }
 }

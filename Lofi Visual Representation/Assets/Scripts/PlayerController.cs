@@ -41,9 +41,4 @@ public class PlayerController : MonoBehaviour
         transform.Translate(new Vector3(horMovement, 0, verMovement) * Time.deltaTime);
     }
 
-    private void onTriggerEnter(Collider other){
-        /*if(other.gameObject.tag == "SpawnTrigger"){
-            spawnManager.SpawnTriggerEntered();
-        }*/
-    }
 }

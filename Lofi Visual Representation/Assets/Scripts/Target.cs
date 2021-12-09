@@ -9,7 +9,6 @@ public class Target : MonoBehaviour
         if (health <= 0f){
             Die();
         }
-
     }
 
     void Die(){
