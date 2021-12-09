@@ -46,6 +46,6 @@ public class GunController : MonoBehaviour
         lineR.SetPosition(0, fpsGun.transform.position);
         lineR.SetPosition(1, hitpoint);
 
-        Destroy(bulletTraillEffect, 0.3f);
+        Destroy(bulletTraillEffect, 0.2f);
     }
 }
