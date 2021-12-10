@@ -32,7 +32,7 @@ public class RoadManager : MonoBehaviour
     {
         if(playerTransform.position.z -35>zSpawn-(numOfRoads*roadLength)){
             SpawnRoad(Random.Range(0, roadPrefabs.Length));
-            SpawnTarget(Random.Range(0, tarPrefabs.Length));
+            SpawnTarget(Random.Range(0, targetPrefab.Length));
             DeleteRoad();
         }
     }
