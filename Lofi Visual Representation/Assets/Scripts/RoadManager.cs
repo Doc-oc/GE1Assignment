@@ -5,6 +5,8 @@ using UnityEngine;
 public class RoadManager : MonoBehaviour
 {
     public GameObject[] roadPrefabs;
+
+    public GameObject[] targetPrefab;
     public float zSpawn = 0;
     public float roadLength = 30;
     public int numOfRoads = 3;
@@ -30,6 +32,7 @@ public class RoadManager : MonoBehaviour
     {
         if(playerTransform.position.z -35>zSpawn-(numOfRoads*roadLength)){
             SpawnRoad(Random.Range(0, roadPrefabs.Length));
+            SpawnTarget(Random.Range(0, tarPrefabs.Length));
             DeleteRoad();
         }
     }
@@ -38,6 +41,11 @@ public class RoadManager : MonoBehaviour
         GameObject gObj = Instantiate(roadPrefabs[roadIndex], transform.forward * zSpawn, transform.rotation);
         activeRoad.Add(gObj);
         zSpawn += roadLength;
+    }
+
+    public void SpawnTarget(int tarIndex){
+        GameObject tObj = Instantiate(targetPrefab[tarIndex], transform.forward * zSpawn, transform.rotation);
+
     }
 
     private void DeleteRoad(){
