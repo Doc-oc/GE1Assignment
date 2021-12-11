@@ -7,6 +7,7 @@ public class Target : MonoBehaviour
     public float health = 50f;
     public GameObject[] targetPrefabs;
     //private List<GameObject> activeTarget = new List<GameObject>();
+    public GameObject obj;
 
     //public Transform playerTransform;
 
@@ -18,29 +19,30 @@ public class Target : MonoBehaviour
 
     void Start(){
         Debug.Log("Start");
-        StartCoroutine(Spawn());
+        
     }
 
     void Update(){
-        
+        //Spawn();
     }
     public void TakeDamage(float amount){
         health -= amount;
         if (health <= 0f){
             Die();
+            Spawn();   
         }
+         //StartCoroutine(Spawn());
+
     }
 
     void Die(){
         Destroy(gameObject);
     }
 
-    IEnumerator Spawn(){
+    public void Spawn(){
         Debug.Log("Coroutine");
-        yield return new WaitForSeconds(1);
-        targetIndex = Random.Range(0,2);
+        targetIndex = 1;
         xPos = Random.Range(0, 2) * 5;
-        Instantiate(targetPrefabs[targetIndex], new Vector3(xPos, .0f, 55), targetPrefabs[targetIndex].transform.rotation);
-        StartCoroutine(Spawn());
+        Instantiate(targetPrefabs[targetIndex], new Vector3(xPos, 1f, 55), targetPrefabs[targetIndex].transform.rotation);
     }
 }
