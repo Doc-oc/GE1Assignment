@@ -8,12 +8,25 @@ public class Target : MonoBehaviour
     public GameObject[] targetPrefabs;
     private List<GameObject> activeTarget = new List<GameObject>();
 
+    public Transform playerTransform;
+
+    int numOfTargs = 3;
+     public float zSpawn = 0;
+
+
     void Start(){
-        Spawn(Random.Range(0, targetPrefabs.Length));
+        for(int i=0; i< numOfTargs; i++){
+            if(i==0){
+                Spawn(Random.Range(0, targetPrefabs.Length));
+            }
+        }
     }
 
     void Update(){
-        //Spawn(Random.Range(0, targetPrefabs.Length));
+        if(playerTransform.position.z -35>zSpawn-(numOfTargs*10)){
+            Spawn(Random.Range(0, targetPrefabs.Length));
+            //DeleteRoad();
+        }
     }
     public void TakeDamage(float amount){
         health -= amount;
@@ -27,7 +40,8 @@ public class Target : MonoBehaviour
     }
 
     public void Spawn(int targetIndex){
-        GameObject gObj = Instantiate(targetPrefabs[targetIndex], transform.position , transform.rotation);
+        GameObject gObj = Instantiate(targetPrefabs[targetIndex], transform.position, transform.rotation);
         activeTarget.Add(gObj);
+        zSpawn += 10;
     }
 }
