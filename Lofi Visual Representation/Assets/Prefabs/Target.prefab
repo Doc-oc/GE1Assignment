@@ -109,15 +109,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c972d9bab82954575b29f9d0913497ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPrefab:
-  - {fileID: 3473858166963839649}
-  - {fileID: 3473858166963839649}
-  - {fileID: 3473858166963839649}
   health: 50
-  zSpawn: 0
-  numOfTargs: 3
-  playerTransform: {fileID: 4465802956258938607, guid: 7a00c4c5532c841b496227faa6ad684f,
-    type: 3}
+  targetPrefabs:
+  - {fileID: 3473858166963839649}
+  - {fileID: 3473858166963839649}
+  - {fileID: 3473858166963839649}
 --- !u!114 &3473858166963839655
 MonoBehaviour:
   m_ObjectHideFlags: 0

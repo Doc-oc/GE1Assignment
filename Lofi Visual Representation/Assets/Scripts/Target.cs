@@ -6,27 +6,23 @@ public class Target : MonoBehaviour
 {
     public float health = 50f;
     public GameObject[] targetPrefabs;
-    private List<GameObject> activeTarget = new List<GameObject>();
+    //private List<GameObject> activeTarget = new List<GameObject>();
 
-    public Transform playerTransform;
+    //public Transform playerTransform;
 
-    int numOfTargs = 3;
-     public float zSpawn = 0;
+    //int numOfTargs = 3;
+    // public float zSpawn = 0;
+     private int targetIndex;
+     private int xPos;
 
 
     void Start(){
-        for(int i=0; i< numOfTargs; i++){
-            if(i==0){
-                Spawn(Random.Range(0, targetPrefabs.Length));
-            }
-        }
+        Debug.Log("Start");
+        StartCoroutine(Spawn());
     }
 
     void Update(){
-        if(playerTransform.position.z -35>zSpawn-(numOfTargs*10)){
-            Spawn(Random.Range(0, targetPrefabs.Length));
-            //DeleteRoad();
-        }
+        
     }
     public void TakeDamage(float amount){
         health -= amount;
@@ -39,9 +35,12 @@ public class Target : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void Spawn(int targetIndex){
-        GameObject gObj = Instantiate(targetPrefabs[targetIndex], transform.position, transform.rotation);
-        activeTarget.Add(gObj);
-        zSpawn += 10;
+    IEnumerator Spawn(){
+        Debug.Log("Coroutine");
+        yield return new WaitForSeconds(1);
+        targetIndex = Random.Range(0,2);
+        xPos = Random.Range(0, 2) * 5;
+        Instantiate(targetPrefabs[targetIndex], new Vector3(xPos, .0f, 55), targetPrefabs[targetIndex].transform.rotation);
+        StartCoroutine(Spawn());
     }
 }
