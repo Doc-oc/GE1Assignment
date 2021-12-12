@@ -26,12 +26,14 @@ public class GunController : MonoBehaviour
     }
 
     void Shoot(){
+        Debug.Log("Enter shoot");
         RaycastHit hit;
         if(Physics.Raycast(fpsGun.transform.position, fpsGun.transform.forward, out hit, range)){
             Debug.Log(hit.transform.name);
 
             Target target = hit.transform.GetComponent<Target>();
             if(target != null){
+                Debug.Log("if");
                 target.TakeDamage(damage);
             }
 

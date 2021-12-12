@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    public float health = 50f;
-    public GameObject[] targetPrefabs;
-    //private List<GameObject> activeTarget = new List<GameObject>();
-    public GameObject obj;
+    
+        //private List<GameObject> activeTarget = new List<GameObject>();
 
     //public Transform playerTransform;
 
@@ -15,34 +13,48 @@ public class Target : MonoBehaviour
     // public float zSpawn = 0;
      private int targetIndex;
      private int xPos;
+    //public GameObject targetPrefab;
+    public float health = 50f;
 
+    
 
+    //TargetSpawner spawner = new TargetSpawner();    
     void Start(){
-        Debug.Log("Start");
-        
+        Debug.Log("Start");        
     }
 
     void Update(){
         //Spawn();
     }
     public void TakeDamage(float amount){
+        
+        //TargetSpawner ts = GetComponent<TargetSpawner>();
         health -= amount;
         if (health <= 0f){
-            Die();
-            Spawn();   
+            
+            Spawn();
+            
+            Die();  
+            health += 50f;
         }
          //StartCoroutine(Spawn());
-
+ 
     }
 
     void Die(){
         Destroy(gameObject);
     }
 
+  
     public void Spawn(){
         Debug.Log("Coroutine");
-        targetIndex = 1;
+        //targetIndex = Random.Range(0,2);
         xPos = Random.Range(0, 2) * 5;
-        Instantiate(targetPrefabs[targetIndex], new Vector3(xPos, 1f, 55), targetPrefabs[targetIndex].transform.rotation);
+        Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
+        
     }
+
+    
+
+    
 }

@@ -44,6 +44,8 @@
      <Compile Include="Assets/Scripts/RoadGenerator.cs" />
      <Compile Include="Assets/Scripts/CameraController.cs" />
      <Compile Include="Assets/Scripts/PerlinNoise.cs" />
+     <Compile Include="Assets/Scripts/PrefabManager.cs" />
+     <Compile Include="Assets/Scripts/TargetSpawner.cs" />
      <None Include="Assets/Free Skyboxes - Space/Readme.txt" />
      <None Include="Assets/Scripts/NewSurfaceShader.shader" />
      <None Include="Assets/sky5X/README.txt" />
