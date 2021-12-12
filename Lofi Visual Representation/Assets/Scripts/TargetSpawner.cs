@@ -10,16 +10,16 @@ public class TargetSpawner : MonoBehaviour
     private int targetIndex;
     private int xPos;
     
-    void Awake(){
-        Spawn();
+    void Start(){
+        Spawn(Random.Range(0, 2));
     }
 
-    public void Spawn(){
+    public void Spawn(int index){
         Debug.Log("Coroutine");
-        targetIndex = Random.Range(0, 2);
+        //targetIndex = 2;
         xPos =  Random.Range(0, 2) * 5;
-        targetPrefab[targetIndex] = Instantiate(targetPrefab[targetIndex], new Vector3(xPos, 1f, 55), Quaternion.identity) as GameObject;
-        activeTarget.Add(targetPrefab[targetIndex]);
+        targetPrefab[index] = Instantiate(targetPrefab[targetIndex], new Vector3(xPos, 1f, 55), Quaternion.identity) as GameObject;
+        activeTarget.Add(targetPrefab[index]);
     }
 
     public void Die(){

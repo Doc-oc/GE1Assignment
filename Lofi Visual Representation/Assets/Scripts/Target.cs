@@ -35,7 +35,7 @@ public class Target : MonoBehaviour
         if (health <= 0f){
             health += 30f; 
             score.TargetScore();
-            target.Spawn();
+            target.Spawn(Random.Range(0,2));
             target.Die();  
         }
          //StartCoroutine(Spawn());
