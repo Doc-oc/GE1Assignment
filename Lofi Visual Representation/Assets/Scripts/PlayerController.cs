@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
             //Replace 'Game Over' with your game over scene's name.
             SceneManager.LoadScene("SampleScene");
         }
+        
     }
 
 }

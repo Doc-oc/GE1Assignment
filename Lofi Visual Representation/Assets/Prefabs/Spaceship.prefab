@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4465802956258938603}
   - component: {fileID: 4465802956258938602}
   - component: {fileID: 4465802956258938601}
+  - component: {fileID: 7652963611495615939}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -151,6 +152,19 @@ MonoBehaviour:
   fpsGun: {fileID: 4465802956258938602}
   bulletTrail: {fileID: -2875457432937281820, guid: f866700c8b7644ad4be13b71f871b714,
     type: 3}
+--- !u!65 &7652963611495615939
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4465802956258938592}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4465802956467770149
 GameObject:
   m_ObjectHideFlags: 0

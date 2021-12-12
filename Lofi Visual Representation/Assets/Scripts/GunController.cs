@@ -5,7 +5,7 @@ using UnityEngine;
 public class GunController : MonoBehaviour
 {
     public float damage = 10f;
-    public float range = 100f;
+    public float range = 50f;
 
     public PlayerController fpsGun;
     public LineRenderer bulletTrail;

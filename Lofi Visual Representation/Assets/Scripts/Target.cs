@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Target : MonoBehaviour
 {
-    
-        //private List<GameObject> activeTarget = new List<GameObject>();
+    public GameObject[] targetPrefab;
+    private List<GameObject> activeTarget = new List<GameObject>();
 
     //public Transform playerTransform;
 
@@ -33,7 +33,7 @@ public class Target : MonoBehaviour
         if (health <= 0f){
             health += 30f; 
             score.TargetScore();
-            Spawn();
+            Spawn(Random.Range(0,2));
             Die();  
         }
          //StartCoroutine(Spawn());
@@ -44,10 +44,11 @@ public class Target : MonoBehaviour
     }
 
   
-    public void Spawn(){
+    public void Spawn(int index){
         Debug.Log("Coroutine");
         //targetIndex = Random.Range(0,2);
         xPos = Random.Range(0, 2) * 5;
+        gameObject = targetPrefab[index];
         Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
         
     }
