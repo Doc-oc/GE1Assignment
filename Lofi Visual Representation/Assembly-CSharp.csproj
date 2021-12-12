@@ -45,6 +45,7 @@
      <Compile Include="Assets/Scripts/PerlinNoise.cs" />
      <Compile Include="Assets/Scripts/PrefabManager.cs" />
      <Compile Include="Assets/Scripts/TargetSpawner.cs" />
+     <Compile Include="Assets/Scripts/Score.cs" />
      <None Include="Assets/Free Skyboxes - Space/Readme.txt" />
      <None Include="Assets/Scripts/NewSurfaceShader.shader" />
      <None Include="Assets/sky5X/README.txt" />
