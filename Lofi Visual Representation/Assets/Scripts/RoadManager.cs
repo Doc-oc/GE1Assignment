@@ -36,7 +36,7 @@ public class RoadManager : MonoBehaviour
     }
 
     public void SpawnRoad(int roadIndex){
-        GameObject gObj = Instantiate(roadPrefabs[roadIndex], transform.forward * zSpawn, transform.rotation);
+        GameObject gObj = Instantiate(roadPrefabs[roadIndex], transform.forward * zSpawn, Quaternion.identity);
         activeRoad.Add(gObj);
         zSpawn += roadLength;
     }

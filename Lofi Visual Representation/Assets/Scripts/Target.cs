@@ -14,7 +14,7 @@ public class Target : MonoBehaviour
      private int targetIndex;
      private int xPos;
     //public GameObject targetPrefab;
-    public float health = 50f;
+    public float health = 30f;
 
     
 
@@ -31,11 +31,10 @@ public class Target : MonoBehaviour
         //TargetSpawner ts = GetComponent<TargetSpawner>();
         health -= amount;
         if (health <= 0f){
-            
+            health += 30f;
             Spawn();
-            
             Die();  
-            health += 50f;
+            
         }
          //StartCoroutine(Spawn());
  

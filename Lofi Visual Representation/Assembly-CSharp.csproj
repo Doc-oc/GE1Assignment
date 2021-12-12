@@ -41,7 +41,6 @@
      <Compile Include="Assets/Scripts/ObstacleController.cs" />
      <Compile Include="Assets/Scripts/Target.cs" />
      <Compile Include="Assets/Scripts/GunController.cs" />
-     <Compile Include="Assets/Scripts/RoadGenerator.cs" />
      <Compile Include="Assets/Scripts/CameraController.cs" />
      <Compile Include="Assets/Scripts/PerlinNoise.cs" />
      <Compile Include="Assets/Scripts/PrefabManager.cs" />
