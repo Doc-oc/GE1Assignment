@@ -52,13 +52,6 @@ public class Target : MonoBehaviour
         
     }
     
-    void OnCollisionEnter(Collision Col) {
-        if(Col.collider.tag == "Target")
-        {
-            //Replace 'Game Over' with your game over scene's name.
-            SceneManager.LoadScene("Game Over");
-        }
-    }
 
     
 

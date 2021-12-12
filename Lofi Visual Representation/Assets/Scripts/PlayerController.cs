@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -28,6 +29,17 @@ public class PlayerController : MonoBehaviour
         float horMovement = Input.GetAxis("Horizontal") * speed;
         float verMovement = Input.GetAxis("Vertical") * speed;
         transform.Translate(new Vector3(horMovement, 0, verMovement) * Time.deltaTime);
+    }
+
+
+    void OnCollisionEnter(Collision Col) {
+        Debug.Log("OnCollision");
+        if(Col.collider.tag == "Target")
+        {
+            Debug.Log("OnCollision IF");
+            //Replace 'Game Over' with your game over scene's name.
+            SceneManager.LoadScene("SampleScene");
+        }
     }
 
 }
