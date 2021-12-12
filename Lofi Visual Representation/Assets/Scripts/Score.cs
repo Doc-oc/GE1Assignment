@@ -14,6 +14,11 @@ public class Score : MonoBehaviour
     void Start(){
         StartCoroutine(ScoreUpdate());
     }
+
+    public void TargetScore(){
+        score.text = (scoreText += 30).ToString();
+        
+    }
     IEnumerator ScoreUpdate()
     {
         yield return new WaitForSeconds(2);

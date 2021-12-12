@@ -122,4 +122,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
-  targetPrefab: {fileID: 0}
+  score: {fileID: 0}

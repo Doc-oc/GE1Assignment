@@ -16,28 +16,26 @@ public class Target : MonoBehaviour
     //public GameObject targetPrefab;
     public float health = 30f;
 
-    
-
+    Score score;
     //TargetSpawner spawner = new TargetSpawner();    
     void Start(){
-        Debug.Log("Start");        
+        Debug.Log("Start");
+        score = FindObjectOfType<Score>();
     }
 
     void Update(){
         //Spawn();
     }
     public void TakeDamage(float amount){
-        
         //TargetSpawner ts = GetComponent<TargetSpawner>();
         health -= amount;
         if (health <= 0f){
-            health += 30f;
+            health += 30f; 
+            score.TargetScore();
             Spawn();
             Die();  
-            
         }
          //StartCoroutine(Spawn());
- 
     }
 
     void Die(){
