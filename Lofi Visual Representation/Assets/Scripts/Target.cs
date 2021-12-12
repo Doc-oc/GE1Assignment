@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Target : MonoBehaviour
 {
@@ -49,6 +50,14 @@ public class Target : MonoBehaviour
         xPos = Random.Range(0, 2) * 5;
         Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
         
+    }
+    
+    void OnCollisionEnter(Collision Col) {
+        if(Col.collider.tag == "Target")
+        {
+            //Replace 'Game Over' with your game over scene's name.
+            SceneManager.LoadScene("Game Over");
+        }
     }
 
     
