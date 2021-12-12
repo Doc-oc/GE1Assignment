@@ -47,8 +47,7 @@ public class Target : MonoBehaviour
     public void Spawn(int index){
         Debug.Log("Coroutine");
         //targetIndex = Random.Range(0,2);
-        xPos = Random.Range(0, 2) * 5;
-        gameObject = targetPrefab[index];
+        xPos = Random.Range(0, 2) * 5; 
         Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
         
     }
