@@ -1,3 +1,4 @@
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,16 +6,18 @@ using UnityEngine;
 public class Score : MonoBehaviour
 {
     public Transform player;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Text score;
+
+    private int scoreText = 0;
 
     // Update is called once per frame
-    void Update()
+    void Start(){
+        StartCoroutine(ScoreUpdate());
+    }
+    IEnumerator ScoreUpdate()
     {
-        
+        yield return new WaitForSeconds(2);
+        score.text = (scoreText += 10).ToString();
+        StartCoroutine(ScoreUpdate());
     }
 }
