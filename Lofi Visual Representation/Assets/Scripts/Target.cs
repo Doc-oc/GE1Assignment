@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Target : MonoBehaviour
 {
-    public GameObject[] targetPrefab;
-    private List<GameObject> activeTarget = new List<GameObject>();
+    
+    //private List<GameObject> activeTarget = new List<GameObject>();
 
     //public Transform playerTransform;
 
@@ -18,12 +18,10 @@ public class Target : MonoBehaviour
     public float health = 30f;
 
     Score score;
-    TargetSpawner target;
     //TargetSpawner spawner = new TargetSpawner();    
     void Start(){
         Debug.Log("Start");
         score = FindObjectOfType<Score>();
-        target = FindObjectOfType<TargetSpawner>();
     }
 
     void Update(){
@@ -35,10 +33,22 @@ public class Target : MonoBehaviour
         if (health <= 0f){
             health += 30f; 
             score.TargetScore();
-            target.Spawn(Random.Range(0,2));
-            target.Die();  
+            Spawn();
+            Die();  
         }
          //StartCoroutine(Spawn());
     }
 
+    void Die(){
+        Destroy(gameObject);
+    }
+
+  
+    public void Spawn(){
+        Debug.Log("Coroutine");
+        //targetIndex = Random.Range(0,2);
+        xPos = Random.Range(0, 2) * 5;
+        Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
+        
+    }    
 }
