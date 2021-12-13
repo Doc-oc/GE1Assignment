@@ -14,18 +14,14 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Start(){
         StartCoroutine(ScoreUpdate());
-        obstacle = FindObjectOfType<ObstacleController>();
-
     }
 
     public void TargetScore(){
         score.text = (scoreText += 30).ToString();
-        
     }
     IEnumerator ScoreUpdate()
     {
         yield return new WaitForSeconds(2);
-        obstacle.speed = obstacle.speed + 5f;
         score.text = (scoreText += 10).ToString();
         StartCoroutine(ScoreUpdate());
     }

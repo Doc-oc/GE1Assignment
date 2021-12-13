@@ -19,8 +19,9 @@ public class Target : MonoBehaviour
 
     public Transform player;
 
+    public bool next;
+
     Score score;
-    ObstacleController target;
     //TargetSpawner spawner = new TargetSpawner();    
     void Start(){
         Debug.Log("Start");
@@ -49,11 +50,9 @@ public class Target : MonoBehaviour
         Destroy(gameObject);
     }
 
-  
     public void Spawn(){
-        //targetIndex = Random.Range(0,2);
+        next = true;
         xPos = Random.Range(0, 2) * 5;
         Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
-        
     }    
 }
