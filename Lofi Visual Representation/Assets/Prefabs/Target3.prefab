@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 30
+  player: {fileID: 6460395010981898054}
 --- !u!54 &4252220956866493952
 Rigidbody:
   m_ObjectHideFlags: 0

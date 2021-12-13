@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 30
+  player: {fileID: 4465802956258938607, guid: 7a00c4c5532c841b496227faa6ad684f, type: 3}
 --- !u!54 &-8370443871249294611
 Rigidbody:
   m_ObjectHideFlags: 0
