@@ -20,6 +20,7 @@ public class Target : MonoBehaviour
     public Transform player;
 
     Score score;
+    ObstacleController target;
     //TargetSpawner spawner = new TargetSpawner();    
     void Start(){
         Debug.Log("Start");
@@ -39,7 +40,7 @@ public class Target : MonoBehaviour
             health += 30f; 
             score.TargetScore();
             Spawn();
-            Die();  
+            Die();
         }
          //StartCoroutine(Spawn());
     }
@@ -50,7 +51,6 @@ public class Target : MonoBehaviour
 
   
     public void Spawn(){
-        Debug.Log("Coroutine");
         //targetIndex = Random.Range(0,2);
         xPos = Random.Range(0, 2) * 5;
         Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);

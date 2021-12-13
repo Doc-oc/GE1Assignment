@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObstacleController : MonoBehaviour
 {
-    private float speed = 10f;
+    public float speed = 10f;
     //      private bool going_right = false;
 
     void Update() 
