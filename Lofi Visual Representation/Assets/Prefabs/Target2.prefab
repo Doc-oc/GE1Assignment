@@ -124,6 +124,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 30
   player: {fileID: 4465802956258938607, guid: 7a00c4c5532c841b496227faa6ad684f, type: 3}
+  targetPrefab:
+  - {fileID: 3473858166963839649, guid: 588a52c9d26e24a6e8a641ea57934794, type: 3}
+  - {fileID: 6535789740186944587}
+  - {fileID: 7363704729254889551, guid: 8cf3874eea0be4e92977aeabaf32ce1e, type: 3}
 --- !u!54 &-8370443871249294611
 Rigidbody:
   m_ObjectHideFlags: 0

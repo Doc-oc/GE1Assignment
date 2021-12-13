@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Target : MonoBehaviour
 {
     
-    private List<GameObject> activeTarget = new List<GameObject>();
+    //private List<GameObject> activeTarget = new List<GameObject>();
 
     //public Transform playerTransform;
 
@@ -18,7 +18,6 @@ public class Target : MonoBehaviour
     public float health = 30f;
 
     public Transform player;
-    public GameObject[] targetPrefab;
 
     Score score;
     //TargetSpawner spawner = new TargetSpawner();    
@@ -28,8 +27,8 @@ public class Target : MonoBehaviour
     }
 
     void Update(){
-        if(player.transform.position.z - 30 > gameObject.transform.position.z -10){
-            Spawn(Random.Range(0,3));
+        if(player.transform.position.z - 30 > gameObject.transform.position.z - 10){
+            Spawn();
             Die();
         }
     }
@@ -39,26 +38,22 @@ public class Target : MonoBehaviour
         if (health <= 0f){
             health += 30f; 
             score.TargetScore();
-            Spawn(Random.Range(0,3));
+            Spawn();
             Die();  
         }
          //StartCoroutine(Spawn());
     }
 
-
-    public void Spawn(int index){
-        Debug.Log("Coroutine");
-        //targetIndex = Random.Range(0,2);
-        xPos = Random.Range(0, 2) * 5;
-        Instantiate(targetPrefab[index], new Vector3(xPos, 1f, 55), Quaternion.identity);
-        activeTarget.Add(targetPrefab[index]);
-    }    
-
     void Die(){
-        Debug.Log("Enter Die");
-        Destroy(activeTarget[0]);
-        activeTarget.RemoveAt(0);
+        Destroy(gameObject);
     }
 
   
+    public void Spawn(){
+        Debug.Log("Coroutine");
+        //targetIndex = Random.Range(0,2);
+        xPos = Random.Range(0, 2) * 5;
+        Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
+        
+    }    
 }
