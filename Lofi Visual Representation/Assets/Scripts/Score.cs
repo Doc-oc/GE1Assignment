@@ -19,7 +19,7 @@ public class Score : MonoBehaviour
     }
 
     public void TargetScore(){
-        score.text = (scoreText += 30).ToString();
+        score.text = (scoreText += 10).ToString();
         
     }
 
