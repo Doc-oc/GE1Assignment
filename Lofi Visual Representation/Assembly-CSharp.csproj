@@ -37,17 +37,17 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Scripts/PlayerController.cs" />
+     <Compile Include="Assets/Scripts/PrefabManager.cs" />
      <Compile Include="Assets/Scripts/RoadManager.cs" />
+     <Compile Include="Assets/Scripts/TargetSpawner.cs" />
      <Compile Include="Assets/Scripts/ObstacleController.cs" />
+     <Compile Include="Assets/Scripts/Score.cs" />
      <Compile Include="Assets/Scripts/Target.cs" />
      <Compile Include="Assets/Scripts/GunController.cs" />
      <Compile Include="Assets/Scripts/CameraController.cs" />
      <Compile Include="Assets/Scripts/PerlinNoise.cs" />
-     <Compile Include="Assets/Scripts/PrefabManager.cs" />
-     <Compile Include="Assets/Scripts/TargetSpawner.cs" />
-     <Compile Include="Assets/Scripts/Score.cs" />
+     <Compile Include="Assets/Scripts/AudioManager.cs" />
      <None Include="Assets/Free Skyboxes - Space/Readme.txt" />
-     <None Include="Assets/Scripts/NewSurfaceShader.shader" />
      <None Include="Assets/sky5X/README.txt" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.19f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
