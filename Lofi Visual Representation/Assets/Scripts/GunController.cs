@@ -26,6 +26,7 @@ public class GunController : MonoBehaviour
     }
 
     void Shoot(){
+        
         RaycastHit hit;
         if(Physics.Raycast(fpsGun.transform.position, fpsGun.transform.forward, out hit, range)){
             Debug.Log(hit.transform.name);
