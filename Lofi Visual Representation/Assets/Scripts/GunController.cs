@@ -12,7 +12,6 @@ public class GunController : MonoBehaviour
     public PlayerController fpsGun;
     public LineRenderer bulletTrail;
     public AudioSource audio;
-    public AudioClip audioClip;
     
 
     // Start is called before the first frame update
@@ -25,15 +24,12 @@ public class GunController : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)){
-            audio.clip = audioClip;
             audio.Play();
             Shoot();
         }
     }
 
     void Shoot(){
-
-        
 
         RaycastHit hit;
         if(Physics.Raycast(fpsGun.transform.position, fpsGun.transform.forward, out hit, range)){
