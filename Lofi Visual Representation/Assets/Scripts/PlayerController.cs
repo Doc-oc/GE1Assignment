@@ -10,12 +10,15 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 2.0f;
     public bool isGrounded;
     Rigidbody rb;
+    
+    Score score;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
+        score = FindObjectOfType<Score>();
     }
 
     void OnCollisionStay(){
@@ -29,6 +32,10 @@ public class PlayerController : MonoBehaviour
         float horMovement = Input.GetAxis("Horizontal") * speed;
         float verMovement = Input.GetAxis("Vertical") * speed;
         transform.Translate(new Vector3(horMovement, 0, verMovement) * Time.deltaTime);
+
+        if(Input.GetKeyDown(KeyCode.UpArrow)){
+            score.MoveScore();
+        }
     }
 
 

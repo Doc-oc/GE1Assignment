@@ -22,13 +22,14 @@ public class Score : MonoBehaviour
         score.text = (scoreText += 30).ToString();
         
     }
+
+    public void MoveScore(){
+        score.text = (scoreText += 10).ToString();
+    }
     IEnumerator ScoreUpdate()
     {
         yield return new WaitForSeconds(2);
         score.text = (scoreText += 10).ToString();
-        if(scoreText % 100 == 0){
-            target.Spawn();
-        }
         StartCoroutine(ScoreUpdate());
     }
 }

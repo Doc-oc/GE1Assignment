@@ -5,13 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Target : MonoBehaviour
 {
-    
-    //private List<GameObject> activeTarget = new List<GameObject>();
-
-    //public Transform playerTransform;
-
-    //int numOfTargs = 3;
-    // public float zSpawn = 0;
      private int targetIndex;
      private int xPos;
     //public GameObject targetPrefab;
