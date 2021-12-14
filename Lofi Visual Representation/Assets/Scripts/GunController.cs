@@ -1,32 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
+
     public float damage = 10f;
     public float range = 50f;
 
     public PlayerController fpsGun;
     public LineRenderer bulletTrail;
+    public AudioSource audio;
+    public AudioClip audioClip;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //audio = FindObjectOfType<GunAudio>();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)){
+            audio.clip = audioClip;
+            audio.Play();
             Shoot();
         }
     }
 
     void Shoot(){
+
         
+
         RaycastHit hit;
         if(Physics.Raycast(fpsGun.transform.position, fpsGun.transform.forward, out hit, range)){
             Debug.Log(hit.transform.name);
