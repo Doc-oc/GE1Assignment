@@ -10,7 +10,7 @@ public class Score : MonoBehaviour
     public Text score;
     private ObstacleController obstacle;
 
-    private int scoreText = 0;
+    public int scoreText = 0;
 
     // Update is called once per frame
     void Start(){

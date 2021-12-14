@@ -35,6 +35,8 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.UpArrow)){
             score.MoveScore();
+        } else if (Input.GetKeyDown(KeyCode.R)){
+            SceneManager.LoadScene("SampleScene");
         }
     }
 

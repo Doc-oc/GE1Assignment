@@ -46,6 +46,13 @@ public class Target : MonoBehaviour
     public void Spawn(){
         next = true;
         xPos = Random.Range(-1, 2) * 5;
-        Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
+        if(score.scoreText % 200 == 0){
+            Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
+            xPos = Random.Range(-1, 2) * 5;
+            Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
+        } else {
+            Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
+        }
+        
     }    
 }
