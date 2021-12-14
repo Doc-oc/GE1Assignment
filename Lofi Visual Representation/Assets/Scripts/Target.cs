@@ -52,7 +52,7 @@ public class Target : MonoBehaviour
 
     public void Spawn(){
         next = true;
-        xPos = Random.Range(0, 2) * 5;
+        xPos = Random.Range(-1, 2) * 5;
         Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
     }    
 }
