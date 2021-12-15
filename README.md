@@ -1,4 +1,4 @@
-# Project Title
+# Asteroid Shooter
 
 Name: Dylan O'Connor
 
@@ -7,6 +7,8 @@ Student Number: C18444694
 Class Group: TU857 / DT211C
 
 # Description of the project
+
+My project is an endless runner action game. This mean that it is a game with a linear design that has no end. My game has a space theme, so you are playing as a spaceship shooting asteroids that come your way. The further you move in the game the asteroids speed will slowly increase and at some point more than one asteroid spawns at the same time. You gain points by staying alive and by shooting the asteroids.
 
 # Instructions for use
 
