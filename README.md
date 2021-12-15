@@ -109,10 +109,19 @@ While in game the user can also press the letter "R" to restart the game.
 | Class/asset | Source |
 |-----------|-----------|
 | CameriaController.cs | Self written |
-| GunController.cs | Modified from [reference](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA) |
-| MyClass2.cs | From [reference]() |
-
+| GunController.cs | Modified from [Brackeys YT Channel](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA) |
+| ObstacleController.cs | Self written |
+| PlayerController.cs | Self written |
+| RoadManager.cs | Modified from [Youtube](https://www.youtube.com/watch?v=6Y0U8GHiuBA)|
+| Score.cs | Self Written using Lecture notes|
+| RoadManager.cs | Modified from [Youtube](https://www.youtube.com/watch?v=6Y0U8GHiuBA)|
+| Target.cs | Modified from [Unity Docs](https://docs.unity3d.com/Manual/index.html)|
+| TargetSpawn.cs |Self Written|
 # References
+
+[Unity Docs](https://docs.unity3d.com/Manual/index.html)
+[Bryan Duggan](https://github.com/skooter500/GE1-2021-2022)
+[Brackeys](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA)
 
 # What I am most proud of in the assignment
 
