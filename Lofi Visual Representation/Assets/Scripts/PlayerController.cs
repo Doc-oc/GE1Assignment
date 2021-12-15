@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         if(Col.collider.tag == "Target")
         {
             //Reload Game if you hit target
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("SampleScene");
         }
         
     }

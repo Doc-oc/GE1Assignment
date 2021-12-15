@@ -28,6 +28,7 @@ public class Score : MonoBehaviour
     }
 
     void Update(){
+        //adding highscore
         if (highscoreText < scoreText) {
             //Puts score into the highscore key
             PlayerPrefs.SetInt(highscoreKey, scoreText);
