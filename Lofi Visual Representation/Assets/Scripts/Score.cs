@@ -12,24 +12,31 @@ public class Score : MonoBehaviour
 
     public int scoreText = 0;
 
-    // Update is called once per frame
+    //Once game is loaded
     void Start(){
+        //StartCoroutine to add score every 2 seconds
         StartCoroutine(ScoreUpdate());
+
+        //If target object is not attached to Score, Find it
         target = FindObjectOfType<Target>();
     }
 
+    //Function to calculate hitting a target
     public void TargetScore(){
         score.text = (scoreText += 10).ToString();
-        
     }
 
+    //Function to calculate moving forward
     public void MoveScore(){
         score.text = (scoreText += 10).ToString();
     }
+
+    //Coroutine
     IEnumerator ScoreUpdate()
     {
+        //Wait two seconds
         yield return new WaitForSeconds(2);
-        score.text = (scoreText += 10).ToString();
-        StartCoroutine(ScoreUpdate());
+        score.text = (scoreText += 10).ToString(); //adding 10 to score every 2 seconds
+        StartCoroutine(ScoreUpdate());//Recalling Coroutine
     }
 }

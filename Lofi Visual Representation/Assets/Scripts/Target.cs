@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Target : MonoBehaviour
 {
+    //Inititialising Variables
      private int targetIndex;
      private int xPos;
     //public GameObject targetPrefab;
@@ -48,8 +49,8 @@ public class Target : MonoBehaviour
         xPos = Random.Range(-1, 2) * 5;
         if(score.scoreText % 100 == 0){
             Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
-            //xPos = Random.Range(1, 1) * 5;
-            Instantiate(gameObject, new Vector3(5, 1f, 55), Quaternion.identity);
+            xPos = Random.Range(1, 2) * 5;
+            Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
         } else {
              Instantiate(gameObject, new Vector3(xPos, 1f, 55), Quaternion.identity);
         }
