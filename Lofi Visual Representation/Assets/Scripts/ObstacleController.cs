@@ -18,7 +18,7 @@ public class ObstacleController : MonoBehaviour
             speed += 2f;
         }
         //Move target back towards player
-        transform.Translate(Vector3.back * Time.deltaTime * speed); // Move right
+        transform.Translate(Vector3.back * Time.deltaTime * speed); // Move back
         target.next = false;
     }
 }
