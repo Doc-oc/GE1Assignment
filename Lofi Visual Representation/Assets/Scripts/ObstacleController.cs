@@ -15,7 +15,7 @@ public class ObstacleController : MonoBehaviour
     {
         //if a new target spawns , increase speed
         if(target.next){
-            speed += 2f;
+            speed = speed + 2f;
         }
         //Move target back towards player
         transform.Translate(Vector3.back * Time.deltaTime * speed); // Move back
