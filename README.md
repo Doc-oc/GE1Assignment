@@ -16,25 +16,33 @@ You will be presented with a menu before you begin. There is only 1 option which
 # How it work
 
 The Aim of the game is to shoot or avoid as many asteroids as possible. Once the game starts the spaceship will spawn along with one asteroid slowly coming towards you. The game starts off easy so that the user can get use to it. 
-So lets start with the scoring system. Using a Coroutine in C# I added that Every 2 seconds that you stay alive +10 will be added to your score. If you shoot an asteroid you will get another +10. To encourage the user to move forward I have also added +10 to be added to your score once you press down the UpArrow key, Otherwise the user would just move side to side.
+So lets start with the scoring system. Using a Coroutine in C# I added that Every 2 seconds that you stay alive +10 will be added to your score. If you shoot an asteroid you will get another +10. To encourage the user to move forward I have also added +10 to be added to your score once you press down the UpArrow key, Otherwise the user would just move side to side. I added a highscore so that the user has something to beat everytime they play.
 ```C#
-
     void Start(){
-        //StartCoroutine to add score every 2 seconds
-        StartCoroutine(ScoreUpdate());
-
+        highscoreText = PlayerPrefs.GetInt(highscoreKey, 0); 
+        highscore.text = "Highscore: " + highscoreText;   
         //If target object is not attached to Score, Find it
         target = FindObjectOfType<Target>();
     }
 
+    void Update(){
+        //adding highscore
+        if (highscoreText < scoreText) {
+            //Puts score into the highscore key
+            PlayerPrefs.SetInt(highscoreKey, scoreText);
+            //Saves the keys
+            PlayerPrefs.Save();
+        }
+    }
+
     //Function to calculate hitting a target
     public void TargetScore(){
-        score.text = (scoreText += 10).ToString();
+        score.text = (scoreText = scoreText + 10).ToString();
     }
 
     //Function to calculate moving forward
     public void MoveScore(){
-        score.text = (scoreText += 10).ToString();
+        score.text = (scoreText = scoreText + 10).ToString();
     }
 
     //Coroutine
@@ -42,7 +50,7 @@ So lets start with the scoring system. Using a Coroutine in C# I added that Ever
     {
         //Wait two seconds
         yield return new WaitForSeconds(2);
-        score.text = (scoreText += 10).ToString(); //adding 10 to score every 2 seconds
+        score.text = (scoreText = scoreText + 10).ToString(); //adding 10 to score every 2 seconds
     }
 ```
 Asteroids have a health of 30. When the user shoots them with the spaceship they lose a health of -10. So it takes 3 shots to destroy an asteroid. The spaceship will send out a raycast that will then spawn a line renderer once it hits an object. This line renderer is the bullettrail effect so the user can see the bullet hitting the asteroid. The spaceship has a crosshair so that you can use it to aim at the asteroid. Asteroids spawn in 3 random locations across the terrian. They always have the same y value but the x and z vary. Asteroids have a script attached to them that moves them towards the the player at a certain speed. That speed will slowly increase once another one has spawned. This is aimed to make the game slightly more difficult as you progress. Once the player gets too a new hundred two targets will spawn
@@ -98,9 +106,12 @@ Code snippet of creating a road
         activeRoad.RemoveAt(0);
     }
 ```
+Screenshot of Before Game Menu:
+<img width="869" alt="Screenshot 2021-12-15 at 11 28 46" src="https://user-images.githubusercontent.com/61470071/146178683-787ec575-e258-4cc9-8b8f-a780ce0ad786.png">
 
 Screenshot of Player in Game:
-<img width="869" alt="Screenshot 2021-12-15 at 09 57 23" src="https://user-images.githubusercontent.com/61470071/146165073-259a7c1f-09f0-4ba2-a7fc-4d74790cae18.png">
+
+<img width="869" alt="Screenshot 2021-12-15 at 11 28 09" src="https://user-images.githubusercontent.com/61470071/146178678-8aa69b29-42df-49ff-ad6a-dbb5ed53a8fd.png">
 
 While in game the user can also press the letter "R" to restart the game.
 
