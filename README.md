@@ -117,6 +117,10 @@ While in game the user can also press the letter "R" to restart the game.
 | RoadManager.cs | Modified from [Youtube](https://www.youtube.com/watch?v=6Y0U8GHiuBA)|
 | Target.cs | Modified from [Unity Docs](https://docs.unity3d.com/Manual/index.html)|
 | TargetSpawn.cs |Self Written|
+| Spaceship Asset |Self Written|
+| Target (Asteroid) |Self Written, Material From Asset store|
+| Roads |Self Written|
+
 # References
 
 [Unity Docs](https://docs.unity3d.com/Manual/index.html)
@@ -125,75 +129,9 @@ While in game the user can also press the letter "R" to restart the game.
 
 # What I am most proud of in the assignment
 
+I am quite proud of the whole assignment. I learned so much in a short space of time by just doing the assignment. I am now more familiar with how game physics work and can now relate what I have been doing on this assignment to real world games. Such as Raycasts and how they work, as they would be used in most fps shooter games. So I am proud of the fact that I was able to get a raycast working in my game.
+
 # Proposal submitted earlier can go here:
 
-## This is how to markdown text:
-
-This is *emphasis*
-
-This is a bulleted list
-
-- Item
-- Item
-
-This is a numbered list
-
-1. Item
-1. Item
-
-This is a [hyperlink](http://bryanduggan.org)
-
-# Headings
-## Headings
-#### Headings
-##### Headings
-
-This is code:
-
-```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-So is this without specifying the language:
-
-```
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-Screenshot of Player in Game:
-<img width="869" alt="Screenshot 2021-12-15 at 09 57 23" src="https://user-images.githubusercontent.com/61470071/146165073-259a7c1f-09f0-4ba2-a7fc-4d74790cae18.png">
-
-This is an image using a relative URL:
-
-![An image](images/p8.png)
-
-This is an image using an absolute URL:
-
-![A different image](https://bryanduggandotorg.files.wordpress.com/2019/02/infinite-forms-00045.png?w=595&h=&zoom=2)
-
-This is a youtube video:
-
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
-
-This is a table:
-
-| Heading 1 | Heading 2 |
-|-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-
+I am creating a endless runner game similar to subway surfers or Temple run , where there will be a world and obstacles and barriers will present themselves to 
+the user as they play. The game will get progessivily harder as the player progresses.
