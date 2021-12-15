@@ -138,6 +138,8 @@ While in game the user can also press the letter "R" to restart the game.
 [Bryan Duggan](https://github.com/skooter500/GE1-2021-2022)
 [Brackeys](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA)
 
+[Youtube Video Of Assignment](https://youtu.be/NE22EogG1zw)
+
 # What I am most proud of in the assignment
 
 I am quite proud of the whole assignment. I learned so much in a short space of time by just doing the assignment. I am now more familiar with how game physics work and can now relate what I have been doing on this assignment to real world games. Such as Raycasts and how they work, as they would be used in most fps shooter games. So I am proud of the fact that I was able to get a raycast working in my game.
