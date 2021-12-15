@@ -72,7 +72,7 @@ void Shoot(){
 ```
 For sound I have space rps game themed music which plays all throughout the game in a loop. I also have a gun shooting effect that you can here once you press the space key.
 
-To give the game the endless runner effect I needed to create an infinite road. To do this I had to use a empty game object that contains 3 road prefabs. These 3 road prefab will spawn once the game begins. When the player progresses and moves onto the next road , the previous road will be destroyed and another road prefab will be added on. This means we are recycling roads and destroying the old ones so it doesnt take up alot of memory in run time.
+To give the game the endless runner effect I needed to create an infinite road. To do this I had to use a empty game object that contains 3 road prefabs. These 3 road prefab will spawn once the game begins. When the player progresses and moves onto the next road , the previous road will be destroyed and another road prefab will be added on. This means we are recycling roads and destroying the old ones so it doesnt take up alot of memory in run time. There is two empty game objects with bix colliders either side of the road so that the user can not vary from the road, this is set so the user has to stay within the boundaries.
 Code snippet of creating a road
 ```C#
  // Update is called once per frame
@@ -99,13 +99,17 @@ Code snippet of creating a road
     }
 ```
 
+Screenshot of Player in Game:
+<img width="869" alt="Screenshot 2021-12-15 at 09 57 23" src="https://user-images.githubusercontent.com/61470071/146165073-259a7c1f-09f0-4ba2-a7fc-4d74790cae18.png">
+
+While in game the user can also press the letter "R" to restart the game.
 
 # List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 
 | Class/asset | Source |
 |-----------|-----------|
-| MyClass.cs | Self written |
-| MyClass1.cs | Modified from [reference]() |
+| CameriaController.cs | Self written |
+| GunController.cs | Modified from [reference](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA) |
 | MyClass2.cs | From [reference]() |
 
 # References
