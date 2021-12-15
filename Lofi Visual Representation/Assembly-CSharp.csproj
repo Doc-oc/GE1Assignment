@@ -37,17 +37,15 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Scripts/PlayerController.cs" />
-     <Compile Include="Assets/Scripts/PrefabManager.cs" />
      <Compile Include="Assets/Scripts/RoadManager.cs" />
      <Compile Include="Assets/Scripts/TargetSpawner.cs" />
      <Compile Include="Assets/Scripts/ObstacleController.cs" />
      <Compile Include="Assets/Scripts/Score.cs" />
+     <Compile Include="Assets/Scripts/GunAudio.cs" />
+     <Compile Include="Assets/Scripts/MenuScript.cs" />
      <Compile Include="Assets/Scripts/Target.cs" />
      <Compile Include="Assets/Scripts/GunController.cs" />
      <Compile Include="Assets/Scripts/CameraController.cs" />
-     <Compile Include="Assets/Scripts/PerlinNoise.cs" />
-     <Compile Include="Assets/Scripts/GunAudio.cs" />
-     <Compile Include="Assets/Scripts/MenuScript.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
