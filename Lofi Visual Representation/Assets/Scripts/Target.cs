@@ -9,7 +9,7 @@ public class Target : MonoBehaviour
      private int targetIndex;
      private int xPos;
     //public GameObject targetPrefab;
-    public float health = 30f;
+    public float health = 20f;
 
     public Transform player;
 
@@ -34,7 +34,7 @@ public class Target : MonoBehaviour
         //Called From GunController.cs script
         health -= amount;
         if (health <= 0f){
-            health += 30f; //Resetting health
+            health += 20f; //Resetting health
             score.TargetScore();//Adding to score
             Spawn();
             Die();
