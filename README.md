@@ -135,7 +135,9 @@ While in game the user can also press the letter "R" to restart the game.
 # References
 
 [Unity Docs](https://docs.unity3d.com/Manual/index.html)
+
 [Bryan Duggan](https://github.com/skooter500/GE1-2021-2022)
+
 [Brackeys](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA)
 
 [Youtube Video Of Assignment](https://youtu.be/NE22EogG1zw)
